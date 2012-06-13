@@ -1,13 +1,18 @@
+body {
+  font-family: "Helvetica";
+  background: #fdc400 url('img/logo.png') no-repeat 20px 40px;
+}
+
 #pathe_formulaire {
-	width: 820px;
+	width: 800px;
 	height: 400px;
 	background-repeat: no-repeat;
 }
 div.pathe_formulaire_inscription {
-	background: url("img/fond_inscription.png");
+	background: url("img/fond_inscription.gif");
 }
 div.pathe_formulaire_confirmation {
-	background: url("img/fond_confirmation.png");
+	background: url("img/fond_confirmation.gif");
 }
 #pathe_formulaire_champs {
 	clear: right;
@@ -15,11 +20,18 @@ div.pathe_formulaire_confirmation {
 }
 div.pathe_formulaire_champ {
 	clear: both;
-	float: right;
 	height: 26px;
 	padding-right: 10px;
 }
+label {
+  position: absolute;
+  margin-left: 290px;
+  padding-top: 3px;
+  color: #222;
+  font-size: 14px;
+}
 input.pathe_formulaire_champ {
+  float: right;
 	font-family: arial, helvetica, verdana, sans-serif;
 	color: #7f7d7f;
 	font-size: 14px;
@@ -29,7 +41,10 @@ input.pathe_formulaire_champ {
 	border: 0px;
 	margin: 0px;
 	display: block;
-	background-color: transparent;
+	background-color: #fff;
+	-moz-box-shadow: 2px 2px 5px #666;
+  -webkit-box-shadow: 2px 2px 5px #666;
+  box-shadow: 2px 2px 5px #666;
 }
 div.pathe_formulaire_valider {
 	clear: both;
