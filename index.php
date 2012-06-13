@@ -82,7 +82,7 @@ $ga_code      = getenv('GOOGLE_ANALYTICS_CODE');
       Oahu.bind("oahu:account", function(msg, account) {
         render(account);
       });
-      _oahu_config = { appId: '<?php echo $oahu_app_id ?>', debug: true, verbose: true };
+      _oahu_config = { appId: '<?php echo $oahu_app_id ?>' };
       <?php if ($fb_app_id) : ?>
       _oahu_config.facebook = { appId: "<?php echo $fb_app_id; ?>", status:true, cookie:true, xfbml:true, oauth:true, logging:true, frictionlessRequests : true };
       <?php endif ?>
