@@ -10,9 +10,11 @@ $ga_code      = getenv('GOOGLE_ANALYTICS_CODE');
 <html xmlns="http://www.w3.org/1999/xhtml/video">
 <head>
   <title>Pathe</title>
-    <meta charset="utf-8" />
+  <meta charset="utf-8" />  
   
-
+  <meta property="og:url" content="<?php echo $page_url; ?>" />
+  <meta property="og:title" content="Project test Pathé" />
+  <meta property="og:description" content="Gagnez votre place pour une projetion test d'un film Pathé à Paris !" />
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
   <script src="//<?php echo $oahu_host; ?>/assets/oahu.js" type="text/javascript"></script>
   <script src="//<?php echo $oahu_host; ?>/assets/oahu-apps.js" type="text/javascript"></script>
@@ -68,7 +70,7 @@ $ga_code      = getenv('GOOGLE_ANALYTICS_CODE');
       });
       
       $('.pathe_formulaire_partager').live('click', function() {
-        Oahu.ui.share('facebook', {});
+        Oahu.ui.share('facebook', { link: '<?php echo $page_url; ?>' });
       });
       
       Oahu.bind("oahu:account", function(msg, account) {
