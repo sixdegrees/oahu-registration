@@ -74,7 +74,8 @@ $ga_code      = getenv('GOOGLE_ANALYTICS_CODE');
         Oahu.ui.share('facebook', { 
           link: '<?php echo $page_url; ?>',
           description: "Gagnez votre place pour une projetion test d'un film Pathé à Paris !",
-          name: "Projection test Pathé"          
+          name: "Projection test Pathé",
+          picture: "https://pathe-projections.herokuapp.com/img/logo-fondjaune.png"
         });
       });
       
