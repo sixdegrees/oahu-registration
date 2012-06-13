@@ -1,0 +1,43 @@
+#pathe_formulaire {
+	width: 820px;
+	height: 400px;
+	background-repeat: no-repeat;
+}
+div.pathe_formulaire_inscription {
+	background: url("img/fond_inscription.png");
+}
+div.pathe_formulaire_confirmation {
+	background: url("img/fond_confirmation.png");
+}
+#pathe_formulaire_champs {
+	clear: right;
+	padding: 215px 26px 0px 0px;
+}
+div.pathe_formulaire_champ {
+	clear: both;
+	float: right;
+	height: 26px;
+	padding-right: 10px;
+}
+input.pathe_formulaire_champ {
+	font-family: arial, helvetica, verdana, sans-serif;
+	color: #7f7d7f;
+	font-size: 14px;
+	padding: 2px 3px 0px 3px;
+	height: 18px;
+	font-size: 12px;
+	border: 0px;
+	margin: 0px;
+	display: block;
+	background-color: transparent;
+}
+div.pathe_formulaire_valider {
+	clear: both;
+	float: right;
+	height: 26px;
+	padding-top: 4px;
+}
+div.pathe_formulaire_partager {
+	float: left;
+	padding: 224px 0px 0px 293px;
+}
