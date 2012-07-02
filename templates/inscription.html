@@ -1,23 +1,32 @@
 <div id="pathe_formulaire_champs" class="pathe_formulaire_inscription view">
+  <div class="summary">
+    <div class="logo">LOL USA</div>
+
+    <p class='main'>Vous habitez <b>Paris</b> ?<br/>
+      Venez découvrir en avant-première le film <b>LOL US</b> avec Miley Cyrus et Demi Moore !<br/>
+    </p>
+    <p class='legend'>
+      Faites vite ! Les 100 premiers inscrits gagneront deux places pour la projection du film le 12 juillet prochain.
+    </p>
+  </div>
   <form>
-    <div class="pathe_formulaire_champ">
-      <label for="last_name_field">NOM</label>
-      <input type="text" name="last_name" id="last_name_field" value="" class="pathe_formulaire_champ" style="width: 425px;" />
+    <div class="field">
+      <label for="name">Nom</label>
+      <input class='text' type="text" name="name" id="name_field" value="{{name}}" placeholder="Nom" />
     </div>
-    <div class="pathe_formulaire_champ">
-      <label for="first_name_field">PRENOM</label>
-      <input type="text" name="first_name" id="first_name_field" value="" class="pathe_formulaire_champ" style="width: 395px;" />
+
+    <div class="field">
+      <label for="email">Email</label>
+      <input class='text' type="text" name="email" id="email_field" value="{{email}}" placeholder="Email" />
     </div>
-    <div class="pathe_formulaire_champ">
-      <label for="email_field">EMAIL</label>
-      <input type="text" name="email" id="email_field" value="" class="pathe_formulaire_champ" style="width: 340px;" />
+
+    <div class="field">
+      <label for="phone">Numéro de téléphone</label>
+      <input class='text' type="text" name="phone" id="phone_field" value="{{phone}}" placeholder="Téléphone"/>
     </div>
-    <div class="pathe_formulaire_champ">
-      <label for="phone_field">NUMERO DE TELEPHONE</label>
-      <input type="text" name="phone" id="phone_field" value="" class="pathe_formulaire_champ" style="width: 276px;" />
-    </div>
-    <div class="pathe_formulaire_valider">
-      <input type="image" src="img/valider.png" />
+    
+    <div class="field">
+      <input type="submit" value="Valider" class='submit'/>
     </div>
   </form>
 </div>
