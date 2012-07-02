@@ -54,6 +54,7 @@ $(function() {
     Oahu.account.player.extra = extra;
     Oahu.app.updatePlayer({ extra: extra }, function() {
       render(Oahu.account);
+      setTimeout(sharePage, 2000);
     });
   };
   
@@ -85,18 +86,28 @@ $(function() {
     }
   });
   
-  $('.share').live('click', function() {
+  var isSharing = false;
+  var sharePage = function() {
+    if (isSharing) {
+      return false;
+    }
+    isSharing = true;
     Oahu.ui.share('facebook', { 
       link: page_url,
       description: "Venez découvrir en avant-première le film LOL USA avec Miley Cyrus et Demi Moore !",
       name: "Projection LOL USA le 10 juillet à Paris",
       picture: "https://pathe-projections.herokuapp.com/img/logo-fondjaune.png"
+    }, function() {
+      isSharing = false;
     });
-  });
+  }
+  
+  $('.share').live('click', sharePage);
   
   Oahu.bind("oahu:account", function(msg, account) {
     render(account);
   });
+  
   _oahu_config = { appId: oahu_app_id };
 
   if(fb_app_id){
