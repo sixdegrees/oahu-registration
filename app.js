@@ -6,11 +6,10 @@ $(function() {
         return "No templating engine found..."; 
       }
     };
-    // if (typeof(Handlebars) !== undefined && _.isFunction(Handlebars.compile)) {
-    //   ret = { render: Handlebars.compile(content).apply(null, arguments) };
-    //   return ret;
-    // } else 
-    if (typeof(Hogan) !== undefined && _.isFunction(Hogan.compile)) {
+    if (typeof Handlebars !== "undefined" && Handlebars !== null) {
+      ret = { render: Handlebars.compile(content).apply(null, arguments) };
+      return ret;
+    } else if (typeof Hogan !== "undefined" && Hogan !== null) {
       return Hogan.compile(content);
     }
     return ret;
@@ -52,18 +51,23 @@ $(function() {
   };
   
   var register = function(extra) {
+    console.warn("Calling register with: ", extra);
     Oahu.account.player.extra = extra;
     Oahu.app.updatePlayer({ extra: extra }, function() {
       render(Oahu.account);
     });
   };
   
+  
   $('form').live('submit', function(e) {
     e.preventDefault();
-    var val, extra = {}, fields = _.clone(Oahu.app.registration_fields);
+    // var val, extra = {}, fields = _.clone(Oahu.app.registration_fields);
+    var val, key, field, extra = {}, fields = $('form', this.el).serializeArray();
     while (fields.length > 0) {
       field = fields.pop();
-      val = $('#' + field + "_field").val();
+      console.warn("Field", field);
+      key = field.name.replace(/^player_/, '');
+      val  = field.value;
       if (val.length === 0) {
         alert("Tous les champs sont obligatoires");
         return false;
@@ -71,9 +75,11 @@ $(function() {
         alert("Veuillez saisir un email valide");
         return false;            
       } else {
-        extra[field] = val;
+        extra[key] = val;
       }
     }
+    
+    console.warn("--------> EXTRA: ", extra);
     if (Oahu.account) {
       register(extra);
     } else {
@@ -85,8 +91,8 @@ $(function() {
   $('.share').live('click', function() {
     Oahu.ui.share('facebook', { 
       link: page_url,
-      description: "Venez découvrir en avant-première le film LOL US avec Miley Cyrus et Demi Moore !",
-      name: "Projection LOL US le 12 juillet à Paris",
+      description: "Venez découvrir en avant-première le film LOL USA avec Miley Cyrus et Demi Moore !",
+      name: "Projection LOL USA le 12 juillet à Paris",
       picture: "https://pathe-projections.herokuapp.com/img/logo-fondjaune.png"
     });
   });
