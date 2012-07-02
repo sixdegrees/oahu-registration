@@ -51,7 +51,6 @@ $(function() {
   };
   
   var register = function(extra) {
-    console.warn("Calling register with: ", extra);
     Oahu.account.player.extra = extra;
     Oahu.app.updatePlayer({ extra: extra }, function() {
       render(Oahu.account);
@@ -65,7 +64,6 @@ $(function() {
     var val, key, field, extra = {}, fields = $('form', this.el).serializeArray();
     while (fields.length > 0) {
       field = fields.pop();
-      console.warn("Field", field);
       key = field.name.replace(/^player_/, '');
       val  = field.value;
       if (val.length === 0) {
@@ -79,7 +77,6 @@ $(function() {
       }
     }
     
-    console.warn("--------> EXTRA: ", extra);
     if (Oahu.account) {
       register(extra);
     } else {

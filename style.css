@@ -51,7 +51,7 @@ body {
   padding:7px 5px;
 }
 
-.form.registration input.submit{
+.form.registration .submit{
   font-family: 'Helvetica Condensed', Arial, Verdana, sans-serif;
   font-weight: bold;
   font-size: 24px;
@@ -65,6 +65,12 @@ body {
   border-radius:2px;
   border:none;
   padding:7px 15px;
+  color: #000;
+  text-decoration: none;
+}
+
+a, a:active, a:visited, a:hover {
+  color: #000;
 }
 
 .submit{
