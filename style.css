@@ -5,6 +5,8 @@ body {
   font-size: 62.5%;
   font-size: 14px;
   background: #fdc400 url('img/logo.png') no-repeat 20px 40px;
+  overflow: hidden;
+  width: 800px;
 }
 
 .form.registration{
@@ -20,7 +22,7 @@ body {
 }
 
 #pathe .form.registration{
-  width:600px;
+  width:520px;
   margin-left:270px;
 }
 
