@@ -89,7 +89,7 @@ $(function() {
     Oahu.ui.share('facebook', { 
       link: page_url,
       description: "Venez découvrir en avant-première le film LOL USA avec Miley Cyrus et Demi Moore !",
-      name: "Projection LOL USA le 12 juillet à Paris",
+      name: "Projection LOL USA le 10 juillet à Paris",
       picture: "https://pathe-projections.herokuapp.com/img/logo-fondjaune.png"
     });
   });
