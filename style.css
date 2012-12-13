@@ -69,6 +69,13 @@ body {
   text-decoration: none;
   margin-top: 10px;
   float: right;
+  cursor: pointer;
+}
+
+.field .error {
+  text-align: right;
+  color: rgb(213, 163, 100);
+  clear: both;
 }
 
 a, a:active, a:visited, a:hover {
