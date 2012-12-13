@@ -51,7 +51,7 @@ body {
   padding:7px 5px;
 }
 
-.form.registration .submit{
+.form.registration .btn{
   font-family: 'Helvetica Condensed', Arial, Verdana, sans-serif;
   font-weight: bold;
   font-size: 24px;
@@ -67,6 +67,8 @@ body {
   padding:7px 15px;
   color: #000;
   text-decoration: none;
+  margin-top: 10px;
+  float: right;
 }
 
 a, a:active, a:visited, a:hover {
@@ -79,8 +81,7 @@ a, a:active, a:visited, a:hover {
 
 .logo{
   margin-top: 40px;
-  background: url('img/lol.png') top left no-repeat;
   text-indent: -9999px;
-  height:55px;  
+  height:15px;  
   width:285px;  
 }
