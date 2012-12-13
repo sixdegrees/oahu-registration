@@ -14,8 +14,7 @@
   <meta property="og:image"       content="http://pathe-projections.herokuapp.com/img/logo-fondjaune.png" />
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
   <script src="//<?php echo $oahu_host; ?>/assets/oahu.js" type="text/javascript"></script>
- <!-- <script src="//<?php echo $oahu_host; ?>/assets/oahu-apps.js" type="text/javascript"></script> -->
- <script src="//oahu.dev/assets/oahu-apps.js" type="text/javascript"></script>
+  <script src="//<?php echo $oahu_host; ?>/assets/oahu-apps.js" type="text/javascript"></script>
   <link href="//<?php echo $oahu_host; ?>/assets/oahu-apps.css" media="screen" rel="stylesheet" type="text/css" />
   <link href="./style.css" media="screen" rel="stylesheet" type="text/css" />
   <script>
