@@ -92,3 +92,9 @@ a, a:active, a:visited, a:hover {
   height:15px;  
   width:285px;  
 }
+
+
+.reglement {
+  position: absolute;
+  bottom: 20px;
+}

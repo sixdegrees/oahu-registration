@@ -42,7 +42,9 @@
 </head>
 
 <body id="pathe">
+
   <div class="registration form" data-oahu-widget="registration" data-oahu-on='{ "registration:complete" : "share" }'></div>
+  <div class="reglement"><a href="http://www.pathefilms.com/reglementjeuxconcours2012" target="_blank">Règlement</a></div>
 
   <script type="text/template" data-oahu-template="registration_header">
   {{& app.description}}
