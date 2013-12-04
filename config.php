@@ -13,10 +13,6 @@ define("RULES_URL", 'http://www.pathefilms.com/reglementjeuxconcours2012');
 
 $config = array(
   'oahu' => array(
-    // "cache"     => "true",
-    // "cacheHost" => "127.0.0.1",
-    // "cachePort" => 11211,
-    // "cacheExpiration" => 120
     "likeGate"  => false,
     "host"      => "app-staging.oahu.fr",
     "clientId"  => OAHU_CLIENT_ID,
@@ -24,6 +20,16 @@ $config = array(
     "appSecret" => OAHU_APP_SECRET
   )
 );
+
+if(class_exists('Memcache')){
+  $cache_config = array(
+    "cache"     => "true",
+    "cacheHost" => "127.0.0.1",
+    "cachePort" => 11211,
+    "cacheExpiration" => 120
+  );
+  $config['oahu'] = array_merge($config['oahu'],$cache_config);
+}
 
 $oahu = new Oahu_Client($config);
 $app = $oahu->getApp(OAHU_APP_ID);
