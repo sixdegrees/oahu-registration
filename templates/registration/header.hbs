@@ -1,1 +1,6 @@
-{{& app.description}}
+<h3 class="title">{{app.name}}</h3>
+{{#if isComplete}}
+  <p>Nous avons bien enregistr&eacute; votre participation pour la projection du {{absoluteDate app.ends_at}}.</p>
+{{else}}
+  <p>{{{app.description}}}</p>
+{{/if}}

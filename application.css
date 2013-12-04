@@ -2,7 +2,7 @@
 
 body {
   margin-top: 10px;
-  background-color: #F9C41F;
+  background-color: #F9CD20;
   font-size: 62.5%;
   font-size: 14px;
 }
@@ -17,16 +17,15 @@ body, .title{
 
 #logo{
   background: #fdc400 url('img/logo.png') no-repeat top left;
-  margin-left: 20px;
-  width: 240px;  
-  height: 180px;
   display: block;
+  width: 120px;  
+  height: 90px;
   text-indent: -99999px;
 }
 
 .row{
   margin-top: 10px;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 } 
 
 .field{
@@ -98,7 +97,7 @@ body, .title{
 }
 .registration .btn{
   font-weight: bold;
-  font-size: 24px;
+  font-size: 20px;
   text-transform: uppercase;
   padding:7px 15px;
   color: #000;
@@ -114,11 +113,29 @@ a, a:active, a:visited, a:hover {
   margin-bottom: 10px;
 }
 
+.center-mobile{
+  display: block;
+  margin:0 auto;
+}
+
+.app-logo{
+  margin-bottom: 20px;
+}
+
 @media (min-width: 768px) {
+  #logo{
+    width: 240px;  
+    height: 180px;
+  }
+
+  .app-logo{
+    margin-bottom: 0;
+  }
+
   body{
     margin-top: 30px;
   }
   .row{
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
 }

@@ -1,4 +1,14 @@
 <div class='registration'>
+  <div class="row">
+    <div class="col-sm-6 col-sm-push-6">
+      <img class='img-responsive center-mobile app-logo' src='{{imageUrl app.id}}'/>
+    </div>
+    <div class="col-sm-6 col-sm-pull-6">
+      {{> registration_header}}
+    </div>
+  </div>
+
+
   {{#if isComplete}}
     {{>registration_complete}}
   {{else}}

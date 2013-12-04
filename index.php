@@ -31,7 +31,7 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-5">
-          <div id="logo" class='center-block'><img src="/img/logo-fondjaune.png" alt=""></div>
+          <div id="logo" class='center-block'><img class='img-responsive' src="/img/logo-fondjaune.png" alt=""></div>
         </div>
         <div class="col-sm-7">
           <div class="registration form" data-oahu-widget="registration" data-oahu-on='{ "registration:complete" : "shares" }'></div>
