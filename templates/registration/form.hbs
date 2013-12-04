@@ -1,23 +1,23 @@
-<h3 class='title'>{{app.name}}</h3>
-<p>{{{app.description}}}</p>
+<div class="row heading">
+  <div class="col-sm-7">
+    <h3 class='title'>{{app.name}}</h3>
+    <p>{{{app.description}}}</p>
 
-{{#if app.ends_at}}
-  <p>Vous avez jusqu'au {{fromNow app.ends_at}} pour vous inscrire</p>
-{{/if}}
+    {{#if app.ends_at}}
+      <p>Vous avez jusqu'au {{fromNow app.ends_at}} pour vous inscrire</p>
+    {{/if}}
+  </div>
+  <div class="col-sm-5">
+    <img class='img-responsive' src='{{imageUrl app.id}}'/>
+  </div>
+</div>
 
 <form>
-  <div class="row">
-    <div class="col-xs-9">
-      {{#fields}}
-        {{>registration_field}}
-      {{/fields}}
-      
-      <div class="field">
-        <a class="btn btn-lg btn-default btn-primary btn-block" data-oahu-action="registration.submit">Valider</a>
-      </div>
-    </div>
-    <div class="col-xs-3">
-      <img class='img-responsive' src='{{imageUrl app.id}}'/>
-    </div>
+  {{#fields}}
+    {{>registration_field}}
+  {{/fields}}
+  
+  <div class="field">
+    <a class="btn btn-lg btn-default btn-primary btn-block" data-oahu-action="registration.submit">Valider</a>
   </div>
 </form>

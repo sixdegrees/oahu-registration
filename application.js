@@ -8,7 +8,7 @@ function OahuInitCallback() {
   { name : "email", type : "text",     label : "", placeholder : "Email",  required: true, error : "Veuillez saisir votre email" },
   { name : "ville", type : "text",     label : "", placeholder : "Ville",  required: true, error : "Veuillez saisir votre ville" },
   { name : "phone", type : "text",     label : "", placeholder : "Numéro de Téléphone", value : "", error : "Numéro de téléphone Invalide" },
-  { name : "optin", type : "checkbox", label : "J'accepte les conditions d'utilisation",  required: true, error : "Veuillez accepter les conditions d'utilisation" },
+  { name : "optin", type : "checkbox", label : "J'accepte les conditions d'utilisation",  required: true, error : "Obligatoire" },
   ];
   setTimeout(function(){
     $('input.form-control').floatlabel({labelClass:'floatlabel', labelEndTop:6});

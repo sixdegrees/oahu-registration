@@ -1,7 +1,7 @@
 @import 'fonts/stylesheet.css';
 
 body {
-  padding-top: 10px;
+  margin-top: 10px;
   background-color: #F9C41F;
   font-size: 62.5%;
   font-size: 14px;
@@ -11,9 +11,12 @@ body, .title{
   font-family: "Helvetica Condensed",'Helvetica', Arial, Verdana, sans-serif;
 }
 
+.title{
+  margin-top: 0;
+}
+
 #logo{
   background: #fdc400 url('img/logo.png') no-repeat top left;
-  margin-top: 40px;
   margin-left: 20px;
   width: 240px;  
   height: 180px;
@@ -21,7 +24,8 @@ body, .title{
   text-indent: -99999px;
 }
 
-.form{
+.row{
+  margin-top: 10px;
   margin-bottom: 40px;
 } 
 
@@ -104,4 +108,17 @@ body, .title{
 
 a, a:active, a:visited, a:hover {
   color: #000;
+}
+
+.row .heading{
+  margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+  body{
+    margin-top: 30px;
+  }
+  .row{
+    margin-bottom: 40px;
+  }
 }
