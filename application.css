@@ -1,0 +1,107 @@
+@import 'fonts/stylesheet.css';
+
+body {
+  padding-top: 10px;
+  background-color: #F9C41F;
+  font-size: 62.5%;
+  font-size: 14px;
+}
+
+body, .title{
+  font-family: "Helvetica Condensed",'Helvetica', Arial, Verdana, sans-serif;
+}
+
+#logo{
+  background: #fdc400 url('img/logo.png') no-repeat top left;
+  margin-top: 40px;
+  margin-left: 20px;
+  width: 240px;  
+  height: 180px;
+  display: block;
+  text-indent: -99999px;
+}
+
+.form{
+  margin-bottom: 40px;
+} 
+
+.field{
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.field .error{
+  display: none;
+  position: absolute;
+  right: 6px;
+  top: 50%;
+  margin-top: -10px;
+}
+
+.floatlabel{
+  font-weight: normal;
+  font-size: 11px;
+}
+
+.floatlabel, .error{
+  z-index: 100;
+  color: rgb(213, 163, 100);
+}
+
+.form-signin-heading, .checkbox {
+  margin-bottom: 10px;
+}
+
+.form-control {
+  position: relative;
+  font-size: 16px;
+  height: auto;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+
+.registration{
+  text-transform: uppercase;
+}
+
+.summary{
+  font-size: 24px;
+}
+
+.legend{
+  font-size: 20px;
+}
+
+
+.registration input.text, .registration .btn{
+  background: white;
+  -webkit-border-radius:2px;
+  -moz-border-radius:2px;
+  -ms-border-radius:2px;
+  -o-border-radius:2px;
+  border-radius:2px;
+  border:none;
+}
+
+.registration input.text{
+  font-weight: normal;
+  font-size:18px;
+  padding:7px 5px;
+  text-decoration: none;
+}
+.registration .btn{
+  font-weight: bold;
+  font-size: 24px;
+  text-transform: uppercase;
+  padding:7px 15px;
+  color: #000;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+a, a:active, a:visited, a:hover {
+  color: #000;
+}

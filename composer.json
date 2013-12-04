@@ -1,0 +1,8 @@
+{
+  "name" : "oahu/oahu-quiz",
+  "version" : "0.1.0",
+  "require" : {
+    "oahu/oahu": "dev-master"
+  },
+  "minimum-stability": "dev"
+}
